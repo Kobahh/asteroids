@@ -20,5 +20,4 @@ class CircleShape(pygame.sprite.Sprite):
         pygame.draw.polygon(screen, "white", self.triangle(), LINE_WIDTH)
 
     def update(self, dt: float) -> None:
-        # must override
-        pass
+        self.position += self.velocity * dt
